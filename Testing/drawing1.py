@@ -86,7 +86,10 @@ arcade.draw_circle_filled(440, 500,  30, (255, 211, 182))
 arcade.draw_circle_filled(440, 500,  20, (255, 170, 165))
 arcade.draw_circle_filled(440, 500, 10, (255, 139, 148))
 
-
+#this code writes the message in the picture
+arcade.draw_text("Lollipop Fun ",150, 450, (0, 0, 205), 50)
+arcade.draw_text("is ",300, 250, (0, 0, 205), 50)
+arcade.draw_text("best Fun",150, 50, (0, 0, 205), 50)
 
 
 # Finish drawing
