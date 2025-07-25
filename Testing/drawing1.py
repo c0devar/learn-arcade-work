@@ -30,13 +30,27 @@ arcade.draw_lrbt_rectangle_filled(0, 599, 0, 300, (186,255,201)) # green
 arcade.draw_lrbt_rectangle_filled(0, 599, 150, 300, (255,255,186)) # yellow
 arcade.draw_lrbt_rectangle_filled(0, 599, 300, 450, (255,223,186)) # orange
 
+
+# Draw an ellipse, no outline rectangle needed
+# if you set all parameters the same it makes a circle
+# put this code before the lollipops so it is rendered first and the lollipos appear on top
+# a center of (300, 300)
+# width of 350
+# height of 200
+arcade.draw_ellipse_outline(300, 300, 450, 450, (255,247,0), 3)
+
+arcade.draw_triangle_outline(125, 150, 475, 150, 300, 525, (255, 247, 0), 3)
+
+
 # This part of the code makes the lollipop art
 
 # Left lollipop
 # Blue vertical bar for lollipop stem
+arcade.draw_lrbt_rectangle_filled(116, 124, 199, 401, (255, 19, 240))
 arcade.draw_lrbt_rectangle_filled(117, 123, 200, 400, (186, 225, 255))
 
 # Lollipop top
+arcade.draw_circle_filled(120, 375, 62, (255, 19, 240))
 arcade.draw_circle_filled(120, 375, 60, (186, 255, 201))
 arcade.draw_circle_filled(120, 375, 50, (168, 230, 207))
 arcade.draw_circle_filled(120, 375, 40, (220, 237, 193))
@@ -46,9 +60,11 @@ arcade.draw_circle_filled(120, 375, 10, (255, 139, 148))
 
 # Middle lollipop
 # Blue vertical bar for lollipop stem
+arcade.draw_lrbt_rectangle_filled(316, 324, 49, 251, (255, 19, 240))
 arcade.draw_lrbt_rectangle_filled(317, 323, 50, 250, (186, 225, 255))
 
 # Lollipop top
+arcade.draw_circle_filled(320, 225, 62, (255, 19, 240))
 arcade.draw_circle_filled(320, 225, 60, (186, 255, 201))
 arcade.draw_circle_filled(320, 225, 50, (168, 230, 207))
 arcade.draw_circle_filled(320, 225, 40, (220, 237, 193))
@@ -58,15 +74,20 @@ arcade.draw_circle_filled(320, 225, 10, (255, 139, 148))
 
 # Right lollipop
 # Blue vertical bar for lollipop stem
-arcade.draw_lrbt_rectangle_filled(437, 443, 325, 525, (186, 225, 255))
+arcade.draw_lrbt_rectangle_filled(436, 444, 326, 526, (255, 19, 240))
+arcade.draw_lrbt_rectangle_filled(437, 443, 327, 527, (186, 225, 255))
 
 # Lollipop top
+arcade.draw_circle_filled(440, 500, 62, (255, 19, 240))
 arcade.draw_circle_filled(440, 500, 60, (186, 255, 201))
 arcade.draw_circle_filled(440, 500, 50, (168, 230, 207))
 arcade.draw_circle_filled(440, 500,  40, (220, 237, 193))
 arcade.draw_circle_filled(440, 500,  30, (255, 211, 182))
 arcade.draw_circle_filled(440, 500,  20, (255, 170, 165))
 arcade.draw_circle_filled(440, 500, 10, (255, 139, 148))
+
+
+
 
 # Finish drawing
 arcade.finish_render()
