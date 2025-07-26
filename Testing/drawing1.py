@@ -33,7 +33,7 @@ arcade.draw_lrbt_rectangle_filled(0, 599, 300, 450, (255,223,186)) # orange
 
 # Draw an ellipse, no outline rectangle needed
 # if you set all parameters the same it makes a circle
-# put this code before the lollipops so it is rendered first and the lollipos appear on top
+# put this code before the lollipops so it is rendered first and the lollipops appear on top
 # a center of (300, 300)
 # width of 350
 # height of 200
